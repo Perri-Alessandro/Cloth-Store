@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
+body {
+  margin: 1.2%;
+}
+a {
+  cursor: pointer;
+}
+/* .navBar {
+  overflow: auto;
+} */
+.aPrimaMetàNav1 {
+  float: left;
+  padding: 0.5%;
+  font-family: "Aldrich", sans-serif;
+  font-weight: bold;
+}
+.aPrimaMetàNav1:hover {
+  text-decoration: underline 1.5px;
+}
+.aSecondaMetàNav1 {
+  float: right;
+  padding: 0.5%;
+}
+.aSecondaMetàNav1:hover {
+  color: rgb(183, 0, 0);
+}
+h1 {
+  margin-top: 2%;
+  font-size: 400%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 22.2%;
+  font-style: italic;
+  font-family: cursive;
+}
+.navBarFissa {
+  margin-left: auto;
+  margin-right: auto;
+  width: 23.5%;
+  margin-top: 2%;
+}
+.aNavFissa {
+  padding: 3%;
+  font-family: "Aldrich", sans-serif;
+  font-weight: bold;
+}
+.aNavFissa:hover {
+  font-size: 117%;
+  text-decoration: underline rgb(183, 0, 0) 3px;
+}
+.lenteNavFissa {
+  border-left: 1px solid;
+  padding: 3.5%;
+}
+.lenteNavFissa:hover {
+  color: rgb(183, 0, 0);
+}
