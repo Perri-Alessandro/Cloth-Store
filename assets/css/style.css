@@ -55,4 +55,6 @@ h1 {
 }
 .lenteNavFissa:hover {
   color: rgb(183, 0, 0);
+  border-color: black;
+  font-size: 130%;
 }
