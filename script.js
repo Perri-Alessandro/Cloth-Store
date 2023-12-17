@@ -210,16 +210,18 @@ const arrayLi = [
 const footer = document.getElementsByTagName("footer")[0];
 const divFooter = document.createElement("div");
 footer.appendChild(divFooter);
-footer.classList.add("divFooter");
+divFooter.classList.add("divFooter");
 
-arrayUl.forEach((ulElementi) => {
+for (let i = 0; i < arrayUl.length; i++) {
+  const ulElementi = arrayUl[i];
   const ul = document.createElement("ul");
-  ulElementi.forEach((liElementi) => {
+  for (let j = 0; j < ulElementi.length; j++) {
+    const liElementi = ulElementi[j];
     const li = document.createElement("li");
     li.textContent = liElementi;
     ul.appendChild(li);
-  });
+  }
   divFooter.appendChild(ul);
-});
+}
 console.log("CREATO DIV CON DENTRO LISTE PER FOOTER");
 // FIXA ATTACCO DI NAV FISSA CON MAIN IN DISPOSITIVI MOBILI
