@@ -91,7 +91,7 @@ arrayNavBarFissa.forEach((elementi, indice) => {
     });
     console.log("AGGIUNTO EFFETTO DI HOVER");
   } else {
-    console.log("ARRAY DELLE IMMAGINI NON DEFINITO O VUOTO, O hover XD");
+    return;
   }
 });
 console.log(
@@ -102,3 +102,6 @@ console.log(
   "CREATO ARRAY CONTENENTE IMMAGINI PER OGNI <div> DENTRO AD <a> (TRANNE ICONA) DI NAVBAR FISSA:",
   imgNavHover
 );
+
+// CREAT TAG IMG, COLLEGALE A QUELLE IN CARTELLA ED APPENDI A SEZIONE
+// ATTACCA NAV BAR FISSA A MARGINE ALTO DI FINESTRA
