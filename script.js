@@ -49,20 +49,20 @@ const imgNavHover = [
     "https://placedog.net/200",
   ],
   [
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
+    "https://placedog.net/215",
+    "https://placedog.net/215",
+    "https://placedog.net/215",
+    "https://placedog.net/215",
+    "https://placedog.net/215",
+    "https://placedog.net/215",
   ],
   [
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
-    "https://placedog.net/200",
+    "https://placedog.net/210",
+    "https://placedog.net/210",
+    "https://placedog.net/210",
+    "https://placedog.net/210",
+    "https://placedog.net/210",
+    "https://placedog.net/210",
   ],
 ];
 
@@ -94,6 +94,7 @@ arrayNavBarFissa.forEach((elementi, indice) => {
     return;
   }
 });
+
 console.log(
   "CREATO ARRAY CONTENENTE 1 <div> PER OGNI <a> DI NAVBAR FISSA (per hover):",
   arrayNavFissaHover
