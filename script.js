@@ -1,7 +1,9 @@
 console.log("UAAAAAAAAAAAAAAAAAAAAAAAAAA"); /* XD */
 
-///////////////////////////////////////////////// DIV E CONTENUTO NAVBAR ALTA //////////////////////////////////////////////
-const navBar = document.getElementsByTagName("nav")[0];
+///////////////////////////////////////////////// NAV, DIV E CONTENUTO NAVBAR ALTA //////////////////////////////////////////////
+const header = document.getElementsByTagName("header")[0];
+const navBar = document.createElement("nav");
+header.appendChild(navBar);
 
 const divNavBar = document.createElement("div");
 divNavBar.classList.add("navBar1");
@@ -36,7 +38,7 @@ for (let i = 0; i < ancoreNavBarFissa.length; i++) {
 }
 console.log("CREATO ARRAY CON DENTRO <a> DI NAVBAR FISSA:", arrayNavBarFissa);
 
-/*///////////// CREO 2 ARRAY,1 PER LE IMG CHE ED 1 PER I DIV CHE LE CONTERRANNO,///////////////////////////////////////////
+/*///////////// CREO 2 ARRAY,1 PER LE IMG ED 1 PER I DIV CHE LE CONTERRANNO,///////////////////////////////////////////
 AGGIUNGO ARRAY DIV CON DENTRO ARRAY DI IMMAGINI AD OGNI <A>, PER NAVBAR FISSA IN HOVER //////////////////////////////////7/*/
 const arrayNavFissaHover = [];
 const imgNavHover = [
@@ -89,7 +91,6 @@ arrayNavBarFissa.forEach((elementi, indice) => {
         arrayNavFissaHover[i].style.display = "none";
       });
     });
-    console.log("AGGIUNTO EFFETTO DI HOVER");
   } else {
     return;
   }
@@ -100,9 +101,39 @@ console.log(
   arrayNavFissaHover
 );
 console.log(
-  "CREATO ARRAY CONTENENTE IMMAGINI PER OGNI <div> DENTRO AD <a> (TRANNE ICONA) DI NAVBAR FISSA:",
+  "CREATO ARRAY CONTENENTE IMMAGINI PER OGNI <div> DENTRO AD <a> (TRANNE LENTE) DI NAVBAR FISSA:",
   imgNavHover
 );
+console.log(
+  "AGGIUNTO EFFETTO DI HOVER PER DIV DENTRO <a> DI NAV FISSA (TRANNE LENTE)"
+);
 
-// CREAT TAG IMG, COLLEGALE A QUELLE IN CARTELLA ED APPENDI A SEZIONE
+// CREATi TAG SECTION, ARTICLE ED IMG.
+// PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO IMG
+const imgMain = [
+  "/assets/images/foto3.jpg",
+  "/assets/images/foto2.jpg",
+  "/assets/images/foto1.jpg",
+];
+
+const creaContenutoMain = function () {
+  const main = document.getElementsByTagName("main")[0];
+  imgMain.forEach((elemento) => {
+    const section = document.createElement("section");
+    const article = document.createElement("article");
+    const img = document.createElement("img");
+    img.classList.add("imgMain");
+    img.src = elemento;
+
+    main.appendChild(section);
+    section.appendChild(article);
+    article.appendChild(img);
+  });
+  console.log(
+    "PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO IMG:",
+    imgMain
+  );
+};
+
+creaContenutoMain();
 // ATTACCA NAV BAR FISSA A MARGINE ALTO DI FINESTRA
