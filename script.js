@@ -1,5 +1,7 @@
 console.log("UAAAAAAAAAAAAAAAAAAAAAAAAAA"); /* XD */
 
+///////////////////////////////////////////////////////////////////// HEADER ////////////////////////////////////////////////////////////////////////////////
+
 ///////////////////////////////////////////////// NAV, DIV E CONTENUTO NAVBAR ALTA //////////////////////////////////////////////
 const header = document.getElementsByTagName("header")[0];
 const navBar = document.createElement("nav");
@@ -35,8 +37,11 @@ navBar.appendChild(divNavBarFissa);
 const ancoreNavBarFissa = divNavBarFissa.getElementsByTagName("a");
 for (let i = 0; i < ancoreNavBarFissa.length; i++) {
   arrayNavBarFissa.push(ancoreNavBarFissa[i]);
+  // ancoreNavBarFissa[i].style.position = "fixed y";
 }
 console.log("CREATO ARRAY CON DENTRO <a> DI NAVBAR FISSA:", arrayNavBarFissa);
+
+///////////////////////////////////////////////////////////////// MAIN ////////////////////////////////////////////////////////////////////////////////////////////////7
 
 /*///////////// CREO 2 ARRAY,1 PER LE IMG ED 1 PER I DIV CHE LE CONTERRANNO,///////////////////////////////////////////
 AGGIUNGO ARRAY DIV CON DENTRO ARRAY DI IMMAGINI AD OGNI <A>, PER NAVBAR FISSA IN HOVER //////////////////////////////////7/*/
@@ -108,7 +113,7 @@ console.log(
   "AGGIUNTO EFFETTO DI HOVER PER DIV DENTRO <a> DI NAV FISSA (TRANNE LENTE)"
 );
 
-// CREATi TAG SECTION, ARTICLE, IMG, H2, P, A.
+// CREO TAG SECTION, ARTICLE, IMG, H2, P, A.
 // PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO
 // OLTRE AD IMG ANCHE H2-P ED A
 const imgMain = [

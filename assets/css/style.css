@@ -36,7 +36,6 @@ h1 {
 }
 .navBarFissa {
   margin-top: 1.2%;
-  /* postion: relative */
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -99,4 +98,13 @@ header {
   width: 97.5%;
   padding-bottom: 1.5%; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO
                         DA ACCORCIARE QUEL BORDO*/
+}
+.divHoverNavBarF > img {
+  padding: 1%;
+  width: 14.6%;
+}
+.divHoverNavBarF {
+  width: 90%;
+  position: absolute;
+  /* align-items: ; */
 }
