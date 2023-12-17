@@ -2,13 +2,15 @@
 
 body {
   margin: 1.2%;
+  text-align: center;
 }
 a {
   cursor: pointer;
+  /* text-decoration: none;  QUANDO VERRANNANNO AGIGUNTI HREF*/
 }
-/* .navBar {
+.navBar1 {
   overflow: auto;
-} */
+}
 .aPrimaMetàNav1 {
   float: left;
   padding: 0.5%;
@@ -26,22 +28,24 @@ a {
   color: rgb(183, 0, 0);
 }
 h1 {
-  margin-top: 2%;
+  margin-top: -1.2%;
   font-size: 400%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 22.2%;
   font-style: italic;
   font-family: cursive;
 }
 .navBarFissa {
+  margin-top: 1.2%;
+  /* postion: relative */
   margin-left: auto;
   margin-right: auto;
-  width: 23.5%;
-  margin-top: 2%;
+  width: 100%;
+}
+.divHoverNavBarF {
+  background-color: aqua;
+  padding: 2%;
 }
 .aNavFissa {
-  padding: 3%;
+  padding: 1%;
   font-family: "Aldrich", sans-serif;
   font-weight: bold;
 }
@@ -51,10 +55,10 @@ h1 {
 }
 .lenteNavFissa {
   border-left: 1px solid;
-  padding: 3.5%;
+  padding: 1.5%;
 }
 .lenteNavFissa:hover {
   color: rgb(183, 0, 0);
   border-color: black;
-  font-size: 130%;
+  font-size: 117%;
 }
