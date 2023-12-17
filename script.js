@@ -169,17 +169,57 @@ const creaContenutoMain = function () {
     if (indice < imgMain.length - 2) {
       img.classList.add("imgMain");
     } else {
-      img.classList.add("img2Main");
+      section.classList.add("img2Main");
+      article.classList.add("img2Main");
+      img.classList.add("images2Main");
+      h2.classList.add("img2Main");
+      p.classList.add("pImg2Main");
+      a.classList.add("aImg2Main");
     }
   });
 };
 console.log(
-  "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>",
+  "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>, ALLE ULTIME 2 VERRà AGGIUNTA UNA CLASSE DIVERSA PER OGNI ELEMENTO FRATELLO",
   imgMain
 );
 
 creaContenutoMain();
 
 ////////////////////////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////////////////////////////////////
+const arrayUl = [
+  ["ASSISTENZA CLIENTI", "CHI SIAMO", "AREA LEGALE E PRIVACY", "FOLLOW US"],
+];
+const arrayLi = [
+  [
+    "CONTATTA CLOTH STORE",
+    "CHIAMA ORA",
+    "SEGUI IL TUO ORDINE",
+    "SPEDIZIONE E CONSEGNA",
+    "ORDINI E PAGAMENTO",
+  ],
+  ["COLLABORA CON NOI", "XDXDXDXDXDXDXDXDXD"],
+  [
+    "CONDIZIONI DI VENDITA",
+    "POLITICA DI RESI E CAMBI",
+    "INFORMATIVA PRIVACY",
+    "COOKIE POLICY",
+  ],
+  ["instagram", "facebook", "twitter", "linkedin"],
+];
 
-// FIXA ATTACCO DI NAV BAR IN ALTO
+const footer = document.getElementsByTagName("footer")[0];
+const divFooter = document.createElement("div");
+footer.appendChild(divFooter);
+footer.classList.add("divFooter");
+
+arrayUl.forEach((ulElementi) => {
+  const ul = document.createElement("ul");
+  ulElementi.forEach((liElementi) => {
+    const li = document.createElement("li");
+    li.textContent = liElementi;
+    ul.appendChild(li);
+  });
+  divFooter.appendChild(ul);
+});
+console.log("CREATO DIV CON DENTRO LISTE PER FOOTER");
+// FIXA ATTACCO DI NAV FISSA CON MAIN IN DISPOSITIVI MOBILI
