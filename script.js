@@ -37,7 +37,6 @@ navBar.appendChild(divNavBarFissa);
 const ancoreNavBarFissa = divNavBarFissa.getElementsByTagName("a");
 for (let i = 0; i < ancoreNavBarFissa.length; i++) {
   arrayNavBarFissa.push(ancoreNavBarFissa[i]);
-  // ancoreNavBarFissa[i].style.position = "fixed y";
 }
 console.log("CREATO ARRAY CON DENTRO <a> DI NAVBAR FISSA:", arrayNavBarFissa);
 

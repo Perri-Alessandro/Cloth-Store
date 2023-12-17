@@ -102,9 +102,15 @@ header {
 .divHoverNavBarF > img {
   padding: 1%;
   width: 14.6%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .divHoverNavBarF {
   width: 90%;
-  position: absolute;
-  /* align-items: ; */
+  height: 120%;
+  position: absolute; /* NON SMINCIA LE ANCORE DELLA NAV FISSA QUANDO APPAIONO I DIV */
+  margin-top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
