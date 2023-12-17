@@ -116,16 +116,22 @@ console.log(
 // PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO
 // OLTRE AD IMG ANCHE H2-P ED A
 const imgMain = [
-  "/assets/images/foto3.jpg",
-  "/assets/images/foto2.jpg",
-  "/assets/images/foto1.jpg",
+  "https://placedog.net/280",
+  "https://placedog.net/270",
+  "https://placedog.net/260",
+  "https://placedog.net/250",
+  "https://placedog.net/245",
 ];
 const titoliSezioni = [
   "TESSUTI SOLO SU PRENOTAZIONE",
   "I NOSTRI TESSUTI",
   "CAMICE",
+  "SPEDIZIONE E RESO",
+  "CHI SIAMO",
 ];
 const descrizioneSezioni = [
+  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
+  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
   "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
   "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
   "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
@@ -134,6 +140,8 @@ const aSezioni = [
   "Scopri la selezione",
   "Scopri la selezione",
   "Scopri la selezione",
+  "Scopri il servizio",
+  "Scopri chi siamo",
 ];
 
 const creaContenutoMain = function () {
@@ -146,7 +154,6 @@ const creaContenutoMain = function () {
     const p = document.createElement("p");
     const a = document.createElement("a");
 
-    img.classList.add("imgMain");
     img.src = elemento;
     h2.textContent = titoliSezioni[indice];
     p.textContent = descrizioneSezioni[indice];
@@ -159,13 +166,20 @@ const creaContenutoMain = function () {
     article.appendChild(h2);
     article.appendChild(p);
     article.appendChild(a);
+    if (indice < imgMain.length - 2) {
+      img.classList.add("imgMain");
+    } else {
+      img.classList.add("img2Main");
+    }
   });
-  console.log(
-    "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>",
-    imgMain
-  );
 };
+console.log(
+  "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>",
+  imgMain
+);
 
 creaContenutoMain();
+
+////////////////////////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////////////////////////////////////
 
 // FIXA ATTACCO DI NAV BAR IN ALTO

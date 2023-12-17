@@ -33,6 +33,7 @@ h1 {
   font-size: 400%;
   font-style: italic;
   font-family: cursive;
+  margin-bottom: 1.7%;
 }
 .navBarFissa {
   margin-top: 1.2%;
@@ -63,14 +64,17 @@ h1 {
   font-size: 117%;
 }
 main {
-  margin-top: 9.5%;
+  margin-top: 11%;
+  padding-top: 1.1%;
 }
 section {
   margin-bottom: 3.2%;
 }
-.imgMain {
+.imgMain,
+.img2Main {
   width: 45%;
   min-width: 340px;
+  border-radius: 4%;
 }
 h2 {
   font-size: 150%;
@@ -92,11 +96,12 @@ section > article > a:hover {
   border-bottom: none;
 }
 header {
+  padding-top: 1%;
   position: fixed;
   top: 0; /* Fissa la navbar in alto */
   background-color: rgb(243, 255, 240);
-  width: 97.5%;
-  padding-bottom: 1.5%; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
+  width: 97.55%;
+  padding-bottom: 1.8%; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
                         DA ACCORCIARE QUEL BORDO*/
 }
 .divHoverNavBarF > img {
@@ -107,8 +112,8 @@ header {
   width: 90%;
   height: 120%;
   position: absolute; /* NON SMINCIA LE ANCORE DELLA NAV FISSA QUANDO APPAIONO I DIV */
-  margin-top: 10.5%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 13%;
+  top: 50%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  left: 50%; /*   ""                            ""   */
+  transform: translate(-50%, -50%); /*   ""                            ""   */
 }
