@@ -70,4 +70,5 @@ section {
 }
 .imgMain {
   width: 45%;
+  min-width: 340px;
 }

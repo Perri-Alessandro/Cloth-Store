@@ -108,29 +108,56 @@ console.log(
   "AGGIUNTO EFFETTO DI HOVER PER DIV DENTRO <a> DI NAV FISSA (TRANNE LENTE)"
 );
 
-// CREATi TAG SECTION, ARTICLE ED IMG.
-// PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO IMG
+// CREATi TAG SECTION, ARTICLE, IMG, H2, P, A.
+// PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO
+// OLTRE AD IMG ANCHE H2-P ED A
 const imgMain = [
   "/assets/images/foto3.jpg",
   "/assets/images/foto2.jpg",
   "/assets/images/foto1.jpg",
 ];
+const titoliSezioni = [
+  "TESSUTI SOLO SU PRENOTAZIONE",
+  "I NOSTRI TESSUTI",
+  "CAMICE",
+];
+const descrizioneSezioni = [
+  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
+  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
+  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
+];
+const aSezioni = [
+  "Scopri la selezione",
+  "Scopri la selezione",
+  "Scopri la selezione",
+];
 
 const creaContenutoMain = function () {
   const main = document.getElementsByTagName("main")[0];
-  imgMain.forEach((elemento) => {
+  imgMain.forEach((elemento, indice) => {
     const section = document.createElement("section");
     const article = document.createElement("article");
     const img = document.createElement("img");
+    const h2 = document.createElement("h2");
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+
     img.classList.add("imgMain");
     img.src = elemento;
+    h2.textContent = titoliSezioni[indice];
+    p.textContent = descrizioneSezioni[indice];
+    a.textContent = aSezioni[indice];
+    // a.href = "uaaaa.com"
 
     main.appendChild(section);
     section.appendChild(article);
     article.appendChild(img);
+    article.appendChild(h2);
+    article.appendChild(p);
+    article.appendChild(a);
   });
   console.log(
-    "PER OGNI IMMAGINE DI ARRAY imgMain CREATA SEZIONE CON DENTRO ARTICOLO, E DENTRO ARTICOLO IMG:",
+    "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>",
     imgMain
   );
 };
