@@ -169,10 +169,10 @@ const creaContenutoMain = function () {
     if (indice < imgMain.length - 2) {
       img.classList.add("imgMain");
     } else {
-      section.classList.add("img2Main");
-      article.classList.add("img2Main");
-      img.classList.add("images2Main");
-      h2.classList.add("img2Main");
+      section.classList.add("broImg2Main");
+      article.classList.add("broImg2Main");
+      img.classList.add("img2Main");
+      h2.classList.add("h2Img2Main");
       p.classList.add("pImg2Main");
       a.classList.add("aImg2Main");
     }
@@ -187,7 +187,10 @@ creaContenutoMain();
 
 ////////////////////////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////////////////////////////////////
 const arrayUl = [
-  ["ASSISTENZA CLIENTI", "CHI SIAMO", "AREA LEGALE E PRIVACY", "FOLLOW US"],
+  ["ASSISTENZA CLIENTI"],
+  ["CHI SIAMO"],
+  ["AREA LEGALE E PRIVACY"],
+  ["FOLLOW US"],
 ];
 const arrayLi = [
   [
@@ -210,18 +213,24 @@ const arrayLi = [
 const footer = document.getElementsByTagName("footer")[0];
 const divFooter = document.createElement("div");
 footer.appendChild(divFooter);
-divFooter.classList.add("divFooter");
 
-for (let i = 0; i < arrayUl.length; i++) {
-  const ulElementi = arrayUl[i];
+arrayUl.forEach((ulElements, index) => {
   const ul = document.createElement("ul");
-  for (let j = 0; j < ulElementi.length; j++) {
-    const liElementi = ulElementi[j];
-    const li = document.createElement("li");
-    li.textContent = liElementi;
-    ul.appendChild(li);
-  }
   divFooter.appendChild(ul);
-}
-console.log("CREATO DIV CON DENTRO LISTE PER FOOTER");
+
+  arrayUl.forEach((liIndex) => {
+    const li = document.createElement("li");
+    ul.appendChild(li);
+    li.textContent = arrayLi[index][liIndex];
+
+    ul.textContent = ulElements;
+  });
+});
+console.log(
+  "CREATO DIV NEL FOOTER CON DENTRO UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI"
+);
+
+// const a = document.createElement("a");
+// il.appendChild(a);
+
 // FIXA ATTACCO DI NAV FISSA CON MAIN IN DISPOSITIVI MOBILI
