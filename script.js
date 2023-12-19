@@ -186,6 +186,8 @@ console.log(
 creaContenutoMain();
 
 ////////////////////////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////////////////////////////////////
+////////////////////// CREO ARRAY PER UL ED LI, PER OGNI ELEMENTO DI ARRAY UL CREO UN LI, E PER OGNI INDICE
+////////////////////// DI ARRAY LI CREO UN LI. CREO UN ANCORA PER OGNI LI E CE LA METTO DENTRO.
 const arrayUl = [
   ["ASSISTENZA CLIENTI"],
   ["CHI SIAMO"],
@@ -219,37 +221,18 @@ arrayUl.forEach((ulElements, index) => {
   divFooter.appendChild(ul);
   ul.textContent = ulElements;
 
-  arrayLi[index].forEach((liElements, liIndex) => {
+  arrayLi[index].forEach((liElements) => {
     const li = document.createElement("li");
-    li.textContent = arrayLi[index][liIndex];
+    const a = document.createElement("a");
+
+    li.textContent = a;
+    a.textContent = liElements;
     ul.appendChild(li);
+    li.appendChild(a);
   });
   console.log(
-    "CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI"
+    "CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI E DENTRO AD LI LE ANCORE"
   );
 });
 
-// const a = document.createElement("a");
-// il.appendChild(a);
-
 // FIXA ATTACCO DI NAV FISSA CON MAIN IN DISPOSITIVI MOBILI
-
-// const footer = document.getElementsByTagName('footer')[0]
-// const divFooter = document.createElement('div')
-// footer.appendChild(divFooter)
-
-// arrayUl.forEach((ulElements, index) => {
-//   const ul = document.createElement('ul')
-//   divFooter.appendChild(ul)
-
-//   arrayLi[index].forEach((el, liIndex) => {
-//     const li = document.createElement('li')
-//     li.textContent = arrayLi[index][liIndex]
-//     ul.appendChild(li)
-
-//     // ul.textContent = ulElements
-//   })
-//   console.log(
-//     'CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI'
-//   )
-// })
