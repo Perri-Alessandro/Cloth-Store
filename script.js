@@ -217,13 +217,12 @@ footer.appendChild(divFooter);
 arrayUl.forEach((ulElements, index) => {
   const ul = document.createElement("ul");
   divFooter.appendChild(ul);
+  ul.textContent = ulElements;
 
-  arrayUl.forEach((liIndex) => {
+  arrayLi[index].forEach((liElements, liIndex) => {
     const li = document.createElement("li");
-    ul.appendChild(li);
     li.textContent = arrayLi[index][liIndex];
-
-    ul.textContent = ulElements;
+    ul.appendChild(li);
   });
   console.log(
     "CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI"
@@ -234,3 +233,23 @@ arrayUl.forEach((ulElements, index) => {
 // il.appendChild(a);
 
 // FIXA ATTACCO DI NAV FISSA CON MAIN IN DISPOSITIVI MOBILI
+
+// const footer = document.getElementsByTagName('footer')[0]
+// const divFooter = document.createElement('div')
+// footer.appendChild(divFooter)
+
+// arrayUl.forEach((ulElements, index) => {
+//   const ul = document.createElement('ul')
+//   divFooter.appendChild(ul)
+
+//   arrayLi[index].forEach((el, liIndex) => {
+//     const li = document.createElement('li')
+//     li.textContent = arrayLi[index][liIndex]
+//     ul.appendChild(li)
+
+//     // ul.textContent = ulElements
+//   })
+//   console.log(
+//     'CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI'
+//   )
+// })
