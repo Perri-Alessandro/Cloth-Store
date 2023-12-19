@@ -135,18 +135,20 @@ footer {
 }
 footer > div {
   font-size: 110%;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 150%;
 }
 footer > div > ul,
 li {
   color: aliceblue;
-  display: inline;
   padding: 4%;
 }
-footer > div > ul {
-  display: inline;
-}
-footer > div > li {
-  display: flex;
+footer > div > ul > li > a {
+  font-size: 70%;
+  margin-top: 2vh;
 }

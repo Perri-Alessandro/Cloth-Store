@@ -224,6 +224,7 @@ arrayUl.forEach((ulElements, index) => {
   arrayLi[index].forEach((liElements) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
+    a.classList.add("aFooter");
 
     li.textContent = a;
     a.textContent = liElements;
