@@ -127,7 +127,7 @@ const titoliSezioni = [
   "I NOSTRI TESSUTI",
   "CAMICE",
   "SPEDIZIONE E RESO",
-  "CHI SIAMO",
+  "LA NOSTRA STORIA",
 ];
 const descrizioneSezioni = [
   "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
@@ -218,8 +218,10 @@ footer.appendChild(divFooter);
 
 arrayUl.forEach((ulElements, index) => {
   const ul = document.createElement("ul");
+  const h6 = document.createElement("h6");
   divFooter.appendChild(ul);
-  ul.textContent = ulElements;
+  ul.appendChild(h6);
+  h6.textContent = ulElements;
 
   arrayLi[index].forEach((liElements) => {
     const li = document.createElement("li");

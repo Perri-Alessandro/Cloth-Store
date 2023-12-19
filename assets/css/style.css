@@ -146,9 +146,12 @@ footer > div {
 footer > div > ul,
 li {
   color: aliceblue;
-  padding: 4%;
+  padding: 0 45px;
 }
-footer > div > ul > li > a {
-  font-size: 70%;
-  margin-top: 2vh;
+footer > div > ul h6 {
+  margin-bottom: 20px;
+}
+.aFooter {
+  font-size: 60%;
+  align-items: center;
 }
