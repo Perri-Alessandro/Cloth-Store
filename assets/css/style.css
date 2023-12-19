@@ -144,11 +144,9 @@ li {
   display: inline;
   padding: 4%;
 }
-}
 footer > div > ul {
   display: inline;
 }
-}
 footer > div > li {
   display: flex;
- 
+}
