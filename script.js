@@ -225,10 +225,10 @@ arrayUl.forEach((ulElements, index) => {
 
     ul.textContent = ulElements;
   });
+  console.log(
+    "CREATO DIV NEL FOOTER CON DENTRO 1 UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI"
+  );
 });
-console.log(
-  "CREATO DIV NEL FOOTER CON DENTRO UL PER OGNI ELEMENTO IN ARRAY-UL, DENTRO LI"
-);
 
 // const a = document.createElement("a");
 // il.appendChild(a);
