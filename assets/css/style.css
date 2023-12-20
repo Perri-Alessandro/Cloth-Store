@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
+div.test {
+  margin: auto;
+}
+
 body {
   margin: 1.2%;
   text-align: center;
