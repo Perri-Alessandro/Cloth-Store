@@ -176,6 +176,7 @@ const creaContenutoMain = function () {
       p.classList.add("pImg2Main");
       a.classList.add("aImg2Main");
     }
+    article.classList.add("parallax");
   });
 };
 console.log(
