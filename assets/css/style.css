@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
-div.test {
-  margin: auto;
+main {
+  padding-top: 0%;
 }
 
 body {
@@ -105,7 +105,7 @@ a {
 }
 main {
   margin-top: 10%;
-  padding-top: 3%;
+  /* padding-top: 3%; */
   margin-bottom: 1%;
 }
 section {
@@ -131,12 +131,13 @@ section > article > a:hover {
 .imgMain {
   width: 100%;
   min-width: 340px;
-  max-height: 320px;
   object-fit: cover;
 
 }
 
 .parallax {
+  height: 25vh;
+  background-image: url(https://placedog.net/280);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
