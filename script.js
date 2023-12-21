@@ -166,9 +166,12 @@ const creaContenutoMain = function () {
     article.appendChild(h2);
     article.appendChild(p);
     article.appendChild(a);
+
     if (indice < imgMain.length - 2) {
       img.classList.add("parallax");
     } else {
+      const div = document.createElement("div");
+      section.appendChild(div);
       img.src = elemento;
       section.classList.add("broImg2Main");
       article.classList.add("broImg2Main");

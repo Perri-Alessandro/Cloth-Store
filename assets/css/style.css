@@ -28,8 +28,8 @@ header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.8vh; /*CREDO SIA NECESSARIO PER DISTANZIARE IL TOP DEL BODY, A CAUSA DEL POSITION FIXED NELL'HEADER*/
-  padding-bottom: 2.4vh; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
+  padding-top: 1.8vh; /*CREDO SIA NECESSARIO PER DISTANZIARE IL TOP DEL BODY, A CAUSA DEL POSITION FIXED O DEL FLOW NELL'HEADER*/
+  padding-bottom: 4vh; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
                         DA ACCORCIARE QUEL BORDO*/
 }
 
@@ -55,6 +55,7 @@ a {
 .aSecondaMetàNav1 {
   float: right;
   padding: 0.8vh;
+  transition: 0.6s ease-in-out;
 }
 .aSecondaMetàNav1:hover {
   color: rgb(183, 0, 0);
@@ -71,34 +72,36 @@ a {
   width: 75%;
   height: fit-content;
   position: absolute;
-  top: 38.5vh; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  top: 32.5vh; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
   left: 50%; /*   ""                            ""   */
   transform: translate(-50%, -50%); /*   ""                            ""   */
 }
 .divHoverNavBarF > img {
   padding: 1.7vh;
-  width: 9em;
+  width: 8.4em;
 }
 .aNavFissa {
   padding: 1rem;
   font-family: "Aldrich", sans-serif;
   font-weight: bold;
+  transition: 0.6s ease-in-out;
 }
 .aNavFissa:hover {
-  font-size: 117%;
+  font-size: 110%;
   text-decoration: underline rgb(183, 0, 0) 3px;
 }
 .lenteNavFissa {
   border-left: 1px solid;
   padding: 1.3em;
+  transition: 0.2s ease-in-out;
 }
 .lenteNavFissa:hover {
   color: rgb(183, 0, 0);
   border-color: black;
-  font-size: 117%;
+  font-size: 110%;
 }
 main {
-  margin-top: 13vh;
+  margin-top: 12vh;
   padding-top: 3%;
   margin-bottom: 1.3vh;
   margin-left: 1.8vh;
@@ -130,7 +133,7 @@ section > article > a:hover {
   max-width: 95%;
   max-height: 70vh;
   object-fit: cover;
-  box-shadow: 17px 18px 10px -11px rgba(0, 0, 0, 0.5);
+  box-shadow: 17px 18px 27px -11px rgba(0, 0, 0, 0.5);
 }
 
 /* .parallax {
@@ -152,7 +155,7 @@ section > article > a:hover {
 }
 .img2Main {
   width: 100%;
-  box-shadow: 17px 18px 10px -11px rgba(0, 0, 0, 0.4);
+  box-shadow: 17px 18px 27px -11px rgba(0, 0, 0, 0.4);
 }
 footer {
   background-color: black;
@@ -161,6 +164,7 @@ footer > div {
   font-size: 110%;
   padding-top: 4vh;
   padding-bottom: 4vh;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
