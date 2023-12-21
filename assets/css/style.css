@@ -12,7 +12,7 @@ body {
   max-height: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  min-width: 1200px;
 }
 
 h1 {
@@ -116,6 +116,8 @@ section > article > p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 0.7%;
   margin-bottom: 0.7%;
+  font-style: italic;
+  font-size: 120%;
 }
 section > article > a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -179,7 +181,7 @@ footer > div > ul h6 {
   font-size: 60%;
   align-items: center;
 }
-/* @media screen and (min-width: 300px) {
+/* @media screen and (min-width: 576x) {
   h1 {
     font-size: 240%;
   }

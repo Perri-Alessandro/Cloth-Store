@@ -130,11 +130,11 @@ const titoliSezioni = [
   "LA NOSTRA STORIA",
 ];
 const descrizioneSezioni = [
-  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
-  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
-  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
-  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
-  "XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD DX XD DX XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD XD",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad est ab voluptatem consectetur, vel, neque optio minima accusamus, nobis cum odio repellendus quibusdam repudiandae quia impedit fugit modi laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, suscipit consectetur consequatur magnam incidunt consequuntur ut accusantium dolore veniam unde id minus molestiae est, facere explicabo esse a ullam dicta. ",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad est ab voluptatem consectetur, vel, neque optio minima accusamus, nobis cum odio repellendus quibusdam repudiandae quia impedit fugit modi laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, suscipit consectetur consequatur magnam incidunt consequuntur ut accusantium dolore veniam unde id minus molestiae est, facere explicabo esse a ullam dicta.",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad est ab voluptatem consectetur, vel, neque optio minima accusamus, nobis cum odio repellendus quibusdam repudiandae quia impedit fugit modi laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, suscipit consectetur consequatur magnam incidunt consequuntur ut accusantium dolore veniam unde id minus molestiae est, facere explicabo esse a ullam dicta.",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad est ab voluptatem consectetur, vel, neque optio minima accusamus, nobis cum odio repellendus quibusdam repudiandae quia impedit fugit modi laborum?",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad est ab voluptatem consectetur, vel, neque optio minima accusamus, nobis cum odio repellendus quibusdam repudiandae quia impedit fugit modi laborum?",
 ];
 const aSezioni = [
   "Scopri la selezione",
