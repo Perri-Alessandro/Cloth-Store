@@ -166,6 +166,7 @@ const creaContenutoMain = function () {
       article.classList.add("parallax");
       img.classList.add("imgMain");
     } else {
+      section.appendChild(article);
       section.classList.add("broImg2Main");
       article.classList.add("broImg2Main");
       img.classList.add("img2Main");
