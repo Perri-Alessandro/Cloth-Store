@@ -161,12 +161,12 @@ const creaContenutoMain = function () {
     // a.href = "uaaaa.com"
 
     main.appendChild(section);
+    section.appendChild(article);
+
     if (indice < imgMain.length - 2) {
-      section.appendChild(article);
       article.classList.add("parallax");
       img.classList.add("imgMain");
     } else {
-      section.appendChild(article);
       section.classList.add("broImg2Main");
       article.classList.add("broImg2Main");
       img.classList.add("img2Main");
@@ -180,6 +180,7 @@ const creaContenutoMain = function () {
     article.appendChild(a);
   });
 };
+
 console.log(
   "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>, ALLE ULTIME 2 VERRà AGGIUNTA UNA CLASSE DIVERSA PER OGNI ELEMENTO FRATELLO",
   imgMain
