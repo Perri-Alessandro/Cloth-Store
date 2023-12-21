@@ -154,6 +154,7 @@ const creaContenutoMain = function () {
     const p = document.createElement("p");
     const a = document.createElement("a");
 
+    img.src = elemento;
     h2.textContent = titoliSezioni[indice];
     p.textContent = descrizioneSezioni[indice];
     a.textContent = aSezioni[indice];
@@ -161,24 +162,20 @@ const creaContenutoMain = function () {
 
     main.appendChild(section);
     section.appendChild(article);
-
+    article.appendChild(img);
+    article.appendChild(h2);
+    article.appendChild(p);
+    article.appendChild(a);
     if (indice < imgMain.length - 2) {
-      article.classList.add("parallax");
-      section.appendChild(h2);
-      section.appendChild(p);
-      section.appendChild(a);
+      img.classList.add("parallax");
     } else {
       img.src = elemento;
-      article.appendChild(img);
       section.classList.add("broImg2Main");
       article.classList.add("broImg2Main");
       img.classList.add("img2Main");
       h2.classList.add("h2Img2Main");
       p.classList.add("pImg2Main");
       a.classList.add("aImg2Main");
-      article.appendChild(h2);
-      article.appendChild(p);
-      article.appendChild(a);
     }
   });
 };
