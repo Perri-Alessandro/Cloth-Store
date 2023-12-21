@@ -161,12 +161,9 @@ const creaContenutoMain = function () {
     // a.href = "uaaaa.com"
 
     main.appendChild(section);
-    section.appendChild(article);
-    article.appendChild(img);
-    article.appendChild(h2);
-    article.appendChild(p);
-    article.appendChild(a);
     if (indice < imgMain.length - 2) {
+      section.appendChild(article);
+      article.classList.add("parallax");
       img.classList.add("imgMain");
     } else {
       section.classList.add("broImg2Main");
@@ -176,7 +173,10 @@ const creaContenutoMain = function () {
       p.classList.add("pImg2Main");
       a.classList.add("aImg2Main");
     }
-    article.classList.add("parallax");
+    article.appendChild(img);
+    article.appendChild(h2);
+    article.appendChild(p);
+    article.appendChild(a);
   });
 };
 console.log(
