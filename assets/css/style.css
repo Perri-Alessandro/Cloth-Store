@@ -29,7 +29,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.8vh; /*CREDO SIA NECESSARIO PER DISTANZIARE IL TOP DEL BODY, A CAUSA DEL POSITION FIXED O DEL FLOW NELL'HEADER*/
-  padding-bottom: 4vh; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
+  padding-bottom: 5vh; /*MESSO SOLO PER NON FAR SFORARE BORDO A SX DI LENTE DURANTE LO SCORRIMENTO,
                         DA ACCORCIARE QUEL BORDO*/
 }
 
@@ -65,35 +65,40 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  position: absolute;
 }
 .divHoverNavBarF {
   background-color: aqua;
   padding: 6vh;
-  width: 75%;
-  height: fit-content;
+  width: 800%;
   position: absolute;
   top: 32.5vh; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
   left: 50%; /*   ""                            ""   */
   transform: translate(-50%, -50%); /*   ""                            ""   */
+  z-index: 2;
 }
 .divHoverNavBarF > img {
   padding: 1.7vh;
-  width: 8.4em;
+  max-width: 200%;
+  z-index: 3;
+  position: relative;
 }
 .aNavFissa {
   padding: 1rem;
   font-family: "Aldrich", sans-serif;
   font-weight: bold;
   transition: 0.6s ease-in-out;
+  position: relative;
 }
 .aNavFissa:hover {
-  font-size: 110%;
+  font-size: 105%;
   text-decoration: underline rgb(183, 0, 0) 3px;
 }
 .lenteNavFissa {
   border-left: 1px solid;
   padding: 1.3em;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
+  position: relative;
 }
 .lenteNavFissa:hover {
   color: rgb(183, 0, 0);
@@ -102,7 +107,7 @@ a {
 }
 main {
   margin-top: 12vh;
-  padding-top: 3%;
+  padding-top: 4%;
   margin-bottom: 1.3vh;
   margin-left: 1.8vh;
   margin-right: 1.8vh;
