@@ -72,7 +72,7 @@ a {
   padding: 1%;
   width: 70%;
   position: absolute;
-  top: 700%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  top: 980%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
   left: 50%; /*   ""                            ""   */
   transform: translate(-50%, -50%); /*   ""                            ""   */
   z-index: 2;
@@ -80,8 +80,7 @@ a {
 }
 .divHoverNavBarF > img {
   padding: 1%;
-  width: 13%;
-
+  width: 14%;
   z-index: 3;
 }
 .aNavFissa {
@@ -106,7 +105,7 @@ a {
   font-size: 110%;
 }
 main {
-  padding-top: 9.3%;
+  padding-top: 11.5%;
   margin-bottom: 1.3vh;
   margin-left: 1.8vh;
   margin-right: 1.8vh;
@@ -198,19 +197,145 @@ footer > div > ul h6 {
   bottom: 10px;
   left: 50%;
 }
-/* @media screen and (min-width: 576x) {
-  h1 {
-    font-size: 240%;
+@media screen and (max-width: 1480px) {
+  .divHoverNavBarF {
+    width: 80%;
+    top: 620%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
   }
-  header,
+}
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 85%;
+  }
   main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    padding-top: 16%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 620%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+  .divHoverNavBarF > img {
+    width: 14.5%;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 78%;
+  }
+  main {
+    padding-top: 17.5%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 550%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+  .divHoverNavBarF > img {
+    width: 14.6%;
   }
   footer > div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    font-size: 139%;
   }
-} */
+  .fa-arrow-up {
+    font-size: 150%;
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 75%;
+  }
+  h1 {
+    font-size: 400%;
+    margin-bottom: 2.5vh;
+    margin-top: 1vh;
+  }
+  main {
+    padding-top: 21.5%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 1050%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+  .divHoverNavBarF > img {
+    width: 25%;
+  }
+  footer > div {
+    font-size: 120%;
+  }
+  .fa-arrow-up {
+    font-size: 130%;
+    padding: 1%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  body {
+    font-size: 65%;
+  }
+  h1 {
+    font-size: 370%;
+    margin-bottom: 2.5vh;
+    margin-top: 1vh;
+  }
+  main {
+    padding-top: 27%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 950%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+  .divHoverNavBarF > img {
+    width: 25%;
+  }
+  footer > div {
+    font-size: 110%;
+  }
+  .img2Main {
+    max-width: 73%;
+  }
+  .fa-arrow-up {
+    font-size: 110%;
+    padding: 1%;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  body {
+    font-size: 65%;
+  }
+  h1 {
+    font-size: 330%;
+    margin-bottom: 2.5vh;
+    margin-top: 1vh;
+  }
+  main {
+    padding-top: 30%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 800%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+  .divHoverNavBarF > img {
+    width: 25%;
+  }
+  footer > div {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    padding-top: 35%;
+  }
+}
+@media screen and (max-width: 348px) {
+  main {
+    padding-top: 41%;
+  }
+  footer > div {
+    font-size: 65%;
+  }
+  .divHoverNavBarF {
+    width: 80%;
+    top: 650%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  }
+}
