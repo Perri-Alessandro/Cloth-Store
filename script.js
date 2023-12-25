@@ -82,7 +82,7 @@ arrayNavBarFissa.forEach((elementi, indice) => {
   const imgArray = imgNavHover[indice];
   if (imgArray && imgArray.length > 0) {
     divHoverNavBarF.innerHTML = imgArray
-      .map((imgSrc) => `<img src="${imgSrc}">`)
+      .map((imgSrc) => `<img src="${imgSrc}" alt="foto prodotti">`)
       .join(""); /* JOIN - TRASFORMO ARRAY DI STRINGHE IMG IN SINGOLA STRINGA
                     CONSENTENDO DI CONCATENARE TUTTI GLI ELEMENTI DI ARRAY IN UNA STRINGA */
 
@@ -120,7 +120,7 @@ const imgMain = [
   "https://placedog.net/270",
   "https://placedog.net/260",
   "https://placedog.net/250",
-  "https://placedog.net/245",
+  "https://placedog.net/250",
 ];
 const titoliSezioni = [
   "TESSUTI SOLO SU PRENOTAZIONE",
@@ -155,9 +155,11 @@ const creaContenutoMain = function () {
     const a = document.createElement("a");
 
     img.src = elemento;
+    img.alt = "foto prodotti";
     h2.textContent = titoliSezioni[indice];
     p.textContent = descrizioneSezioni[indice];
     a.textContent = aSezioni[indice];
+
     // a.href = "uaaaa.com"
 
     main.appendChild(section);
@@ -170,10 +172,7 @@ const creaContenutoMain = function () {
     if (indice < imgMain.length - 2) {
       img.classList.add("parallax");
     } else {
-      // const div = document.createElement("div");
-      // section.appendChild(div);
-      img.src = elemento;
-      section.classList.add("broImg2Main");
+      section.classList.add("sect2Main");
       article.classList.add("broImg2Main");
       img.classList.add("img2Main");
       h2.classList.add("h2Img2Main");
@@ -187,8 +186,25 @@ console.log(
   "PER OGNI IMMAGINE DI ARRAY imgMain CREATA <section> CON DENTRO <article>, E DENTRO <article> > <img>, <h2>, <p>, <a>, ALLE ULTIME 2 VERRà AGGIUNTA UNA CLASSE DIVERSA PER OGNI ELEMENTO FRATELLO",
   imgMain
 );
-
 creaContenutoMain();
+
+////////////////////////////////////////// ICONA CHE SCORRE PAGINA DAL BASSO AL ALTO //////////////////////////////////////////////////////////////////////
+const main = document.getElementsByTagName("main")[0];
+const iconaSu = document.createElement("a");
+iconaSu.href = "#";
+iconaSu.innerHTML = `<i class="fas fa-arrow-up"></i>`;
+main.appendChild(iconaSu);
+
+iconaSu.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const scorriSu = {
+    top: 0,
+    behavior: "smooth",
+  };
+
+  window.scrollTo(scorriSu);
+});
 
 ////////////////////////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////////////////////////////////////
 
