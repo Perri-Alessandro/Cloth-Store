@@ -197,6 +197,7 @@ footer > div > ul h6 {
   bottom: 10px;
   left: 50%;
 }
+
 @media screen and (max-width: 1480px) {
   .divHoverNavBarF {
     width: 80%;
@@ -288,7 +289,8 @@ footer > div > ul h6 {
     width: 25%;
   }
   footer > div {
-    font-size: 110%;
+    font-size: 116%;
+    justify-content: space-evenly;
   }
   .img2Main {
     max-width: 73%;
@@ -319,7 +321,8 @@ footer > div > ul h6 {
     width: 25%;
   }
   footer > div {
-    font-size: 75%;
+    font-size: 90%;
+    justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 400px) {
@@ -332,7 +335,7 @@ footer > div > ul h6 {
     padding-top: 41%;
   }
   footer > div {
-    font-size: 65%;
+    font-size: 70%;
   }
   .divHoverNavBarF {
     width: 80%;
