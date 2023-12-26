@@ -72,7 +72,7 @@ a {
   padding: 1%;
   width: 70%;
   position: absolute;
-  top: 980%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
+  top: 710%; /*CENTRA I DIV CHE APPAIONO SOTTO ANCORE*/
   left: 50%; /*   ""                            ""   */
   transform: translate(-50%, -50%); /*   ""                            ""   */
   z-index: 2;
@@ -96,7 +96,7 @@ a {
 .lenteNavFissa {
   border-left: 1px solid;
   padding: 1.3em;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   position: relative;
 }
 .lenteNavFissa:hover {
